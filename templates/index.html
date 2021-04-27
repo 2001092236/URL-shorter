@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Short URL is:  {% endblock %}</h1>
+
+    <a href= {{ url }} >
+            <h2>{{ url }}</h2>
+    </a>
+    <hr>
+
+
+    <div class="form-group">
+        <form action="http://127.0.0.1:5000">
+        <button type="submit" class="btn btn-primary">Go back</button>
+    </div>
+
+{% endblock %}

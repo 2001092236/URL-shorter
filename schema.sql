@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS urls;
+
+CREATE TABLE urls (
+    url TEXT  NOT NULL,
+    short_url TEXT PRIMARY KEY NOT NULL
+);

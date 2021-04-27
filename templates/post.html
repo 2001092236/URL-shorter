@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} {{ urls['url'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ urls['short_url'] }}</span>
+{% endblock %}
