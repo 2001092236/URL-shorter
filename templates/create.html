@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{% block title %} Create a New Post {% endblock %}</h1>
+<h1>{% block title %} Get a short URL {% endblock %}</h1>
 
 <form method="post">
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Enter your URL and (not essential) it's short version</label>
         <input type="text" name="url"
-               placeholder="Post title" class="form-control"
+               placeholder="URL" class="form-control"
                value="{{ request.form['url'] }}"></input>
     </div>
 
     <div class="form-group">
-        <label for="content">Content</label>
-        <textarea name="short_url" placeholder="Post content"
+        <label for="content">short url</label>
+        <textarea name="short_url" placeholder="Short URL"
                   class="form-control">{{ request.form['short_url'] }}</textarea>
     </div>
     <div class="form-group">

@@ -28,6 +28,7 @@ def get_true_url(short_url):
                         (short_url,)).fetchone()
     if pair is None:
         ### AND ADD TO DATABASE (or not)
+        return "Error"
         abort(404)
 
     print("true_url = ", pair['url'])
