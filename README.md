@@ -1,4 +1,4 @@
 # URL-shorter
-Как пользоваться: запустить app.py
-Зайти на сайт
-Вводить ссылку -> будет выдана укороченная версия
+How to use: run app.py
+Go to the site
+Enter the link -> you will get a shortened version
